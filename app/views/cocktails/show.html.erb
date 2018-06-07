@@ -1,0 +1,16 @@
+
+      <h2><%= @cocktail.name %></h2>
+
+      <% @cocktail.doses.each do |dose| %>
+        <% if dose.persisted? %>
+          <li>
+          <%= dose.description + " " + "of" + " " + dose.ingredient.name %>
+          <p><%= link_to "Delete", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-xs pull-right" %></p>
+          </li>
+        <% end %>
+      <% end %>
+          <p><%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail) %></p>
+          <p><%= link_to "Back to cocktails", cocktails_path(@cocktail) %></p>
+
+
+
