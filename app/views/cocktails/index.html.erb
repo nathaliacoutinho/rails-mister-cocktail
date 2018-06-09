@@ -11,15 +11,15 @@
   <h3 class="divider">what are your favorites?</h3>
     <% @cocktails.each do |cocktail| %>
       <%= link_to cocktail_path(cocktail) do %>
-        <div class="col-sm-4">
-          <div class="card-wrapper">
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo %>');">
-              </div>
-                <div class="card-description">
-                  <h2><%= cocktail.name %></h2>
-                </div>
+      <div class="col-sm-4">
+        <div class="card-wrapper">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo %>');">
             </div>
+              <div class="card-description">
+                <h2><%= cocktail.name %></h2>
+              </div>
           </div>
+        </div>
         <% end %>
     <% end %>
   </div>
