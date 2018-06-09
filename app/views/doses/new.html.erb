@@ -1,9 +1,7 @@
 <div class="container">
-  <div class="form-wrapper">
   <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description, placeholder: "1 tbs" %>
   <%= f.input :ingredient_id, collection: Ingredient.all, prompt: "choose one" %>
-  <%= f.submit "add a dose", class: "btn btn-primary btn-sm" %>
+  <%= f.submit "add dose", class: "btn btn-primary btn-sm" %>
 <% end %>
- </div>
 </div>

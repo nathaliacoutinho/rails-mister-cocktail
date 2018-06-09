@@ -1,3 +1,27 @@
+<div class="navbar-wagon">
+  <i class="fas fa-glass-martini"></i>
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search" value>
+      <button class="btn btn-primary btn-lg" type="submit">search</button>
+    </form>
+  </div>
+</div>
+
 <div class="container">
-<%= render 'cocktail_form' %>
+  <%= render 'cocktail_form' %>
+  <%= link_to "home", cocktails_path, :class => "btn btn-primary" %>
+</div>
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/nathaliacoutinho"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/natccoutinho/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/nathalia-coutinho-94aa5b156/"><i class="fab fa-linkedin"></i></a>
+  </div>
+<div class="footer-copyright">
+  Cheers from Le Wagon Amsterdam <i class="fa fa-heart"></i>
+  </div>
+</div>
 </div>
